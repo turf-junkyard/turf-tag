@@ -25,5 +25,11 @@
   "bugs": {
     "url": "https://github.com/morganherlocker/turf-tag/issues"
   },
-  "homepage": "https://github.com/morganherlocker/turf-tag"
+  "homepage": "https://github.com/morganherlocker/turf-tag",
+  "dependencies": {
+    "turf-inside": "^0.1.1"
+  },
+  "devDependencies": {
+    "tape": "^2.12.1"
+  }
 }
