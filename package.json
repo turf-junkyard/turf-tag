@@ -4,7 +4,7 @@
   "description": "turf tag module",
   "main": "index.js",
   "scripts": {
-    "test": "tape test.js"
+    "test": "node test.js"
   },
   "repository": {
     "type": "git",
