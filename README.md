@@ -4,6 +4,29 @@ turf-tag
 
 Performs a spatial join on a set of points from a set of polygons.
 
+###Install
+
+```sh
+npm install turf-inside
+```
+
+###Parameters
+
+|name|description|
+|---|---|
+|points|A FeatureCollection of Point Features|
+|polygons|A FeatureCollection of Polygon Features|
+|polyID|id field on the polygons|
+|containingPolyID|id field to tag onto points that are in a corresponding polygon|
+
+###Usage
+
+```js
+tag(points, polygons, 'polyID', 'containingPolyID')
+```
+
+###Example
+
 ```js
 var tag = require('turf-tag')
 var fs = require('fs')
