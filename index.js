@@ -1,4 +1,4 @@
-inside = require('turf-inside');
+var inside = require('turf-inside');
 
 module.exports = function(points, polygons, field, outField){
   points.features.forEach(function(pt){
