@@ -49,7 +49,7 @@ module.exports = function(points, polygons, field, outField){
       pt.properties = {};
     }
     polygons.features.forEach(function(poly){
-      if(!pt.properties[outField]){
+      if(pt.properties[outField] === undefined){
         var isInside = inside(pt, poly);
         if(isInside){
           pt.properties[outField] = poly.properties[field];
