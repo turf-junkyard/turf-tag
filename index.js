@@ -4,13 +4,11 @@ var inside = require('turf-inside');
  * Takes a {@link FeatureCollection} of {@link Point} features and a FeatureCollection of {@link Polygon} features and performs a spatial join.
  *
  * @module turf/tag
- * @param {FeatureCollection} points a collection of Features with {@link Point}
- * geometries
- * @param {FeatureCollection} polygons collection of Features with {@link Polygon}
- * geometries
- * @param {string} polyId
- * @param {string} containingPolyId
- * @return {LineString} output
+ * @param {FeatureCollection} points a FeatureCollection of {@link Point} features
+ * @param {FeatureCollection} polygons a FeatureCollection of {@link Polygon} features
+ * @param {String} polyId property in `polygons` to add to joined Point features
+ * @param {String} containingPolyId property in `points` in which to store joined property from `polygons
+ * @return {FeatureCollection} a FeatureCollection of point features
  * @example
  * var bbox = [0, 0, 50, 50];
  * // create a triangular grid of polygons
