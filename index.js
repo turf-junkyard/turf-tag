@@ -26,9 +26,12 @@ var inside = require('turf-inside');
  * });
  * var both = turf.featurecollection(
  *   triangleGrid.features.concat(randomPoints.features));
+ *
  * //=both
+ *
  * var tagged = turf.tag(randomPoints, triangleGrid,
  *                       'fill', 'marker-color');
+ *
  * //=tagged
  */
 module.exports = function(points, polygons, field, outField){
