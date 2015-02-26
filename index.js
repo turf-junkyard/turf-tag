@@ -1,7 +1,7 @@
 var inside = require('turf-inside');
 
 /**
- * Takes a set of points and a set of polygons and performs a spatial join.
+ * Takes a set of {@link Point|points} and a set of {@link Polygon|polygons} and performs a spatial join.
  *
  * @module turf/tag
  * @category joins
