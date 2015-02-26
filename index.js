@@ -11,9 +11,9 @@ var inside = require('turf-inside');
  * @param {String} containingPolyId property in `points` in which to store joined property from `polygons
  * @return {FeatureCollection<Point>} points with `containingPolyId` property containing values from `polyId`
  * @example
- * var bbox = [0, 0, 50, 50];
+ * var bbox = [0, 0, 10, 10];
  * // create a triangular grid of polygons
- * var triangleGrid = turf.tin(turf.grid(bbox, 10));
+ * var triangleGrid = turf.triangleGrid(bbox, 50, 'miles');
  * triangleGrid.features.forEach(function(f) {
  *   f.properties.fill = '#' +
  *     (~~(Math.random() * 16)).toString(16) +
