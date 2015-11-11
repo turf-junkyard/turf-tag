@@ -7,7 +7,7 @@ turf tag module
 
 ### `turf.tag(points, polygons, polyId, containingPolyId)`
 
-Takes a set of Point|points and a set of Polygon|polygons and performs a spatial join.
+Takes a set of Point|points and a set of Polygon|polygons, and performs a spatial join, setting attributes on each point from any polygon it is inside.
 
 
 ### Parameters
